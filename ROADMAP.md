@@ -69,8 +69,8 @@ Projects/Nextjs/
 - [x] Tạo thư mục `backend/`, khởi tạo virtual env: `python -m venv venv`
 - [x] Cài đặt: `pip install fastapi uvicorn`
 - [x] Tạo `main.py` với endpoint `GET /` trả về `{"message": "Hello"}`
-- [ ] Chạy: `uvicorn app.main:app --reload` (port 8000)
-- [ ] Truy cập Swagger docs tại `http://localhost:8000/docs`
+- [x] Chạy: `uvicorn app.main:app --reload` (port 8000)
+- [x] Truy cập Swagger docs tại `http://localhost:8000/docs`
 - [x] Cấu hình CORS để Frontend gọi được API
 
 ### Kiểm tra kết nối
@@ -93,12 +93,12 @@ Projects/Nextjs/
 - [ ] Cách shadcn/ui khác với MUI, Ant Design (copy code vào project, không phải npm package)
 
 ### Thực hành
-- [ ] Cài đặt shadcn/ui: `npx shadcn@latest init`
-- [ ] Thêm components: `npx shadcn@latest add button card navigation-menu`
-- [ ] Tạo Root Layout với Header và Footer
-- [ ] Tạo thanh Navigation dùng `NavigationMenu` của shadcn/ui
-- [ ] Tạo component riêng: `Header`, `Footer`, `Navbar`
-- [ ] Tìm hiểu thư mục `components/ui/` (nơi shadcn lưu component)
+- [x] Cài đặt shadcn/ui: `npx shadcn@latest init`
+- [x] Thêm components: `npx shadcn@latest add button card navigation-menu`
+- [x] Tạo Root Layout với Header và Footer
+- [x] Tạo thanh Navigation dùng `NavigationMenu` của shadcn/ui
+- [x] Tạo component riêng: `Header`, `Footer`, `Navbar`
+- [x] Tìm hiểu thư mục `components/ui/` (nơi shadcn lưu component)
 
 ### Kết quả đạt được
 > Website có Header/Footer chung, thanh menu điều hướng đẹp với shadcn/ui

@@ -20,7 +20,7 @@ export default function Blog() {
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-8">
+    <div className="flex flex-1 flex-col items-center justify-center p-8">
       <h1 className="text-4xl font-bold mb-4">Blog</h1>
       <p className="text-lg text-gray-600 mb-8">
         Posts will be displayed here (Phase 3).
