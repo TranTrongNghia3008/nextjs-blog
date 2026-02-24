@@ -60,21 +60,21 @@ Projects/Nextjs/
 ### Frontend - Next.js
 - [x] Khởi tạo: `npx create-next-app@latest frontend`
 - [x] Tìm hiểu cấu trúc thư mục: `app/`, `public/`, `next.config.js`
-- [ ] Tạo trang Home (`app/page.tsx`)
-- [ ] Tạo trang About (`app/about/page.tsx`)
-- [ ] Tạo trang Blog (`app/blog/page.tsx`)
+- [x] Tạo trang Home (`app/page.tsx`)
+- [x] Tạo trang About (`app/about/page.tsx`)
+- [x] Tạo trang Blog (`app/blog/page.tsx`)
 - [x] Chạy: `npm run dev` (port 3000)
 
 ### Backend - FastAPI
 - [x] Tạo thư mục `backend/`, khởi tạo virtual env: `python -m venv venv`
 - [x] Cài đặt: `pip install fastapi uvicorn`
-- [ ] Tạo `main.py` với endpoint `GET /` trả về `{"message": "Hello"}`
+- [x] Tạo `main.py` với endpoint `GET /` trả về `{"message": "Hello"}`
 - [ ] Chạy: `uvicorn app.main:app --reload` (port 8000)
 - [ ] Truy cập Swagger docs tại `http://localhost:8000/docs`
-- [ ] Cấu hình CORS để Frontend gọi được API
+- [x] Cấu hình CORS để Frontend gọi được API
 
 ### Kiểm tra kết nối
-- [ ] Từ Next.js, gọi `fetch("http://localhost:8000/")` và hiển thị kết quả
+- [x] Từ Next.js, gọi `fetch("http://localhost:8000/")` và hiển thị kết quả
 
 ### Kết quả đạt được
 > 2 project chạy song song, FE gọi được API từ BE, thấy kết quả trên trình duyệt
