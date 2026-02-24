@@ -164,25 +164,25 @@ Projects/Nextjs/
 **Mục tiêu:** Tạo giao diện quản trị để thêm/sửa/xóa bài viết.
 
 ### Lý thuyết
-- [ ] Form handling trong React (controlled components)
-- [ ] React Hook Form + Zod validation
-- [ ] HTTP methods: POST, PUT, DELETE từ Frontend
-- [ ] Optimistic UI update
+- [x] Form handling trong React (controlled components)
+- [x] React Hook Form + Zod validation
+- [x] HTTP methods: POST, PUT, DELETE từ Frontend
+- [x] Optimistic UI update
 
 ### Frontend - Trang Admin
-- [ ] Cài đặt: `npx shadcn@latest add table dialog form input textarea toast`
-- [ ] Tạo trang Admin: `app/admin/page.tsx`
-- [ ] Hiển thị danh sách bài viết dùng `Table` của shadcn/ui
-- [ ] Form tạo bài viết mới dùng `Dialog` + `Form`
-- [ ] Form sửa bài viết
-- [ ] Nút xóa bài viết với xác nhận (`AlertDialog`)
-- [ ] Thông báo thành công/thất bại dùng `Toast`
-- [ ] Tạo trang Contact với form gửi liên hệ
+- [x] Cài đặt: `npx shadcn@latest add table dialog form input textarea toast`
+- [x] Tạo trang Admin: `app/admin/page.tsx`
+- [x] Hiển thị danh sách bài viết dùng `Table` của shadcn/ui
+- [x] Form tạo bài viết mới dùng `Dialog` + `Form`
+- [x] Form sửa bài viết
+- [x] Nút xóa bài viết với xác nhận (`AlertDialog`)
+- [x] Thông báo thành công/thất bại dùng `Toast`
+- [x] Tạo trang Contact với form gửi liên hệ
 
 ### Backend - API bổ sung
-- [ ] `POST /api/contact` - nhận form liên hệ
-- [ ] Validate dữ liệu đầu vào với Pydantic
-- [ ] Trả về error message rõ ràng khi dữ liệu không hợp lệ
+- [x] `POST /api/contact` - nhận form liên hệ
+- [x] Validate dữ liệu đầu vào với Pydantic
+- [x] Trả về error message rõ ràng khi dữ liệu không hợp lệ
 
 ### Kết quả đạt được
 > Có trang Admin đầy đủ CRUD, form liên hệ hoạt động
