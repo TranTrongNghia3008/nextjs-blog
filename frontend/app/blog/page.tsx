@@ -1,37 +1,44 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getRootMessage } from "@/lib/api/health";
+import { getPosts, type Post } from "@/lib/api/posts";
+import { BlogCard } from "@/components/blog-card";
 
 export default function Blog() {
-  const [message, setMessage] = useState("");
+  const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    getRootMessage()
+    getPosts()
       .then((data) => {
-        setMessage(data.message);
+        setPosts(data);
         setLoading(false);
       })
       .catch(() => {
-        setMessage("Cannot connect to Backend. Please start FastAPI first!");
+        setError("Cannot connect to Backend. Please start FastAPI first!");
         setLoading(false);
       });
   }, []);
 
   return (
-    <div className="flex flex-1 flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold mb-4">Blog</h1>
-      <p className="text-lg text-gray-600 mb-8">
-        Posts will be displayed here (Phase 3).
-      </p>
-      <div className="rounded-lg border p-4 bg-gray-50">
-        <p className="text-sm text-gray-500 mb-1">Backend connection:</p>
-        {loading ? (
-          <p className="font-mono">Connecting...</p>
-        ) : (
-          <p className="font-mono font-bold">{message}</p>
-        )}
+    <div className="container mx-auto max-w-3xl px-4 py-12">
+      <h1 className="text-4xl font-bold mb-8">Blog</h1>
+
+      {loading && <p className="text-muted-foreground">Loading posts...</p>}
+
+      {error && <p className="text-destructive">{error}</p>}
+
+      <div className="flex flex-col gap-4">
+        {posts.map((post) => (
+          <BlogCard
+            key={post.id}
+            title={post.title}
+            slug={post.slug}
+            content={post.content}
+            createdAt={post.created_at}
+          />
+        ))}
       </div>
     </div>
   );

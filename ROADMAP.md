@@ -86,11 +86,11 @@ Projects/Nextjs/
 **Mục tiêu:** Tạo giao diện đẹp với shadcn/ui, layout chung cho website.
 
 ### Lý thuyết
-- [ ] Layout trong Next.js (`layout.tsx`)
-- [ ] Component `<Link>` để điều hướng
-- [ ] Tailwind CSS cơ bản (đã được tích hợp sẵn)
-- [ ] shadcn/ui là gì? (UI components đẹp, dùng Radix UI + Tailwind)
-- [ ] Cách shadcn/ui khác với MUI, Ant Design (copy code vào project, không phải npm package)
+- [x] Layout trong Next.js (`layout.tsx`)
+- [x] Component `<Link>` để điều hướng
+- [x] Tailwind CSS cơ bản (đã được tích hợp sẵn)
+- [x] shadcn/ui là gì? (UI components đẹp, dùng Radix UI + Tailwind)
+- [x] Cách shadcn/ui khác với MUI, Ant Design (copy code vào project, không phải npm package)
 
 ### Thực hành
 - [x] Cài đặt shadcn/ui: `npx shadcn@latest init`
@@ -110,23 +110,23 @@ Projects/Nextjs/
 **Mục tiêu:** Xây dựng API hoàn chỉnh và hiển thị dữ liệu trên FE.
 
 ### Backend - Xây dựng API
-- [ ] Hiểu Pydantic schema (validate dữ liệu đầu vào)
-- [ ] Tạo dữ liệu mẫu trong memory (list các bài viết)
-- [ ] `GET /api/posts` - lấy danh sách bài viết
-- [ ] `GET /api/posts/{slug}` - lấy chi tiết 1 bài viết
-- [ ] `POST /api/posts` - tạo bài viết mới
-- [ ] `PUT /api/posts/{slug}` - cập nhật bài viết
-- [ ] `DELETE /api/posts/{slug}` - xóa bài viết
-- [ ] Test API bằng Swagger UI (`/docs`)
+- [x] Hiểu Pydantic schema (validate dữ liệu đầu vào)
+- [x] Tạo dữ liệu mẫu trong memory (list các bài viết)
+- [x] `GET /api/posts` - lấy danh sách bài viết
+- [x] `GET /api/posts/{slug}` - lấy chi tiết 1 bài viết
+- [x] `POST /api/posts` - tạo bài viết mới
+- [x] `PUT /api/posts/{slug}` - cập nhật bài viết
+- [x] `DELETE /api/posts/{slug}` - xóa bài viết
+- [x] Test API bằng Swagger UI (`/docs`)
 
 ### Frontend - Hiển thị dữ liệu
-- [ ] Dynamic routes: `app/blog/[slug]/page.tsx`
-- [ ] Server Component vs Client Component ("use client")
-- [ ] Tạo service/lib để gọi API: `lib/api.ts`
-- [ ] Hiển thị danh sách bài viết trên trang Blog
-- [ ] Tạo component `BlogCard` dùng `Card` của shadcn/ui
-- [ ] Tạo trang chi tiết bài viết
-- [ ] Xử lý trường hợp bài viết không tồn tại (404)
+- [x] Dynamic routes: `app/blog/[slug]/page.tsx`
+- [x] Server Component vs Client Component ("use client")
+- [x] Tạo service/lib để gọi API: `lib/api.ts`
+- [x] Hiển thị danh sách bài viết trên trang Blog
+- [x] Tạo component `BlogCard` dùng `Card` của shadcn/ui
+- [x] Tạo trang chi tiết bài viết
+- [x] Xử lý trường hợp bài viết không tồn tại (404)
 
 ### Kết quả đạt được
 > FE hiển thị danh sách bài viết từ API, click vào xem chi tiết
