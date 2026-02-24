@@ -138,18 +138,18 @@ Projects/Nextjs/
 **Mục tiêu:** Lưu trữ dữ liệu thật vào PostgreSQL.
 
 ### Lý thuyết
-- [ ] ORM là gì? SQLAlchemy cơ bản
-- [ ] Model, Session, Query
-- [ ] Alembic - migration tool (quản lý thay đổi database)
-- [ ] PostgreSQL cơ bản (hoặc dùng SQLite để bắt đầu cho đơn giản)
+- [x] ORM là gì? SQLAlchemy cơ bản
+- [x] Model, Session, Query
+- [x] Alembic - migration tool (quản lý thay đổi database)
+- [x] PostgreSQL cơ bản (hoặc dùng SQLite để bắt đầu cho đơn giản)
 
 ### Backend - Kết nối Database
-- [ ] Cài đặt: `pip install sqlalchemy alembic psycopg2-binary python-dotenv`
-- [ ] Tạo file `database.py` (kết nối DB)
-- [ ] Tạo model `Post` (id, title, slug, content, created_at, updated_at)
-- [ ] Chạy migration: `alembic init` và `alembic revision --autogenerate`
-- [ ] Cập nhật các API endpoint để đọc/ghi từ database
-- [ ] Tạo script seed dữ liệu mẫu
+- [x] Cài đặt: `pip install sqlalchemy alembic psycopg2-binary python-dotenv`
+- [x] Tạo file `database.py` (kết nối DB)
+- [x] Tạo model `Post` (id, title, slug, content, created_at, updated_at)
+- [x] Chạy migration: `alembic init` và `alembic revision --autogenerate`
+- [x] Cập nhật các API endpoint để đọc/ghi từ database
+- [x] Tạo script seed dữ liệu mẫu
 
 ### Frontend - Không thay đổi
 > FE vẫn gọi API như cũ, không cần biết BE đổi từ memory sang database
